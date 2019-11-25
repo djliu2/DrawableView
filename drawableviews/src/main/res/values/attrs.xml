@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--圆形-->
+    <attr name="round_as_circle" format="boolean" />
+    <!--全部圆角半径-->
+    <attr name="round_corner" format="integer|dimension" />
+    <!--针对各个角的半径-->
+    <attr name="round_corner_top_left" format="integer|dimension" />
+    <attr name="round_corner_top_right" format="integer|dimension" />
+    <attr name="round_corner_bottom_left" format="integer|dimension" />
+    <attr name="round_corner_bottom_right" format="integer|dimension" />
+<!--    使用ABCD对应各个角的度数 例如30,40,40,30-->
+    <attr name="round_corner_abcd" format="string"/>
+<!--
+        a...b
+        |   |
+        d...c
+-->
+    <attr name="round_corner_option_from_abcd"  format="string"/>
+
+    <!--真正用于解析的属性-->
+    <declare-styleable name="RLDAttrs">
+        <attr name="round_as_circle" />
+        <attr name="round_corner" />
+        <attr name="round_corner_top_left" />
+        <attr name="round_corner_top_right" />
+        <attr name="round_corner_bottom_left" />
+        <attr name="round_corner_bottom_right" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewDrawable">
+        <attr name="round_as_circle" />
+        <attr name="round_corner" />
+        <attr name="round_corner_abcd"/>
+        <attr name="round_corner_option_from_abcd"/>
+    </declare-styleable>
+</resources>
